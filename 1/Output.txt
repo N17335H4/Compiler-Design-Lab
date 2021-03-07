@@ -1,0 +1,13 @@
+
+ keyword : int
+ separator :  
+ identifier : xyz10
+ operator : =
+ integer-constant : 5
+ separator : ;
+ total no. of tokens = 6
+ total no. of operator type tokens = 1
+ total no. of separator type tokens = 2
+ total no. of identifier type tokens = 1
+ total no. of keyword type tokens = 1
+ total no. of constant type tokens = 1
