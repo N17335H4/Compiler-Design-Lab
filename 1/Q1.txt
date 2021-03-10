@@ -1,3 +1,0 @@
-Assign token name for each lexeme in the Input.txt file
-Count the number of each type of tokens [5 types: Operator, Separator, Identifier, Keyword, Constant]
-Print above results in the Output.txt file
