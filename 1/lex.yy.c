@@ -767,42 +767,42 @@ do_action:	/* This label is used only to access EOF actions. */
 case 1:
 YY_RULE_SETUP
 #line 16 "assignment1.l"
-{key++;n++;fprintf(yyout, "\n keyword : %s", yytext);} 
+{key++;n++;fprintf(yyout, "\n <KY , %s>", yytext);} 
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
 #line 19 "assignment1.l"
-{key++;n++;fprintf(yyout, "\n keyword : %s", yytext);} 
+{key++;n++;fprintf(yyout, "\n <KY , %s>", yytext);} 
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
 #line 22 "assignment1.l"
-{id++;n++;fprintf(yyout, "\n identifier : %s", yytext);} 
+{id++;n++;fprintf(yyout, "\n <ID , %s>", yytext);} 
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
 #line 25 "assignment1.l"
-{op++;n++;fprintf(yyout, "\n operator : %s", yytext);} 
+{op++;n++;fprintf(yyout, "\n <OP , %s>", yytext);} 
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
 #line 28 "assignment1.l"
-{op++;n++;fprintf(yyout, "\n operator : %s", yytext);} 
+{op++;n++;fprintf(yyout, "\n <OP , %s>", yytext);} 
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
 #line 31 "assignment1.l"
-{sep++;n++;fprintf(yyout, "\n separator : %s", yytext);} 
+{sep++;n++;fprintf(yyout, "\n <SP , %s>", yytext);} 
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
 #line 34 "assignment1.l"
-{con++;n++;fprintf(yyout, "\n float-constant : %s", yytext);} 
+{con++;n++;fprintf(yyout, "\n <CT , %s>", yytext);} 
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
 #line 37 "assignment1.l"
-{con++;n++;fprintf(yyout, "\n integer-constant : %s", yytext);}						 
+{con++;n++;fprintf(yyout, "\n <CT , %s>", yytext);}						 
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
@@ -1830,11 +1830,11 @@ int main()
 	yyin = fopen("Input.txt", "r");
 	yyout = fopen("Output.txt", "w");
 	yylex(); 	
-	fprintf(yyout, "\n total no. of tokens = %d", n); 
-	fprintf(yyout, "\n total no. of operator type tokens = %d", op); 
-	fprintf(yyout, "\n total no. of separator type tokens = %d", sep); 
-	fprintf(yyout, "\n total no. of identifier type tokens = %d", id); 
-	fprintf(yyout, "\n total no. of keyword type tokens = %d", key); 
-	fprintf(yyout, "\n total no. of constant type tokens = %d\n", con); 
+	fprintf(yyout, "\n Total number of tokens in the above program is %d", n); 
+	//fprintf(yyout, "\n total no. of operator type tokens = %d", op); 
+	//fprintf(yyout, "\n total no. of separator type tokens = %d", sep); 
+	//fprintf(yyout, "\n total no. of identifier type tokens = %d", id); 
+	//fprintf(yyout, "\n total no. of keyword type tokens = %d", key); 
+	//fprintf(yyout, "\n total no. of constant type tokens = %d\n", con); 
 } 
 //character constants and string constants are not considered
