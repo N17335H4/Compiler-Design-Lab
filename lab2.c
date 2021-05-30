@@ -58,6 +58,10 @@ int main() {
     {
     	printf("%s is accepted under rule 'abb'.\n", str);
     }
+	else if (len==0)
+    {
+    	printf("%s is accepted under rule 'a*'.\n", str);
+    }
     else if(rule1(str, len)){
     	printf("%s is accepted under rule 'a*'.\n", str);
     }
